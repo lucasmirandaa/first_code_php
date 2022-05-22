@@ -9,7 +9,9 @@
 <body>
     <p>Competitor Registration Form</p>
     <form action="script.php" method="post">
-        <p>Name: <input type="text" name="nome"/></p>
+        <p>Name: <input type="text" name="name"/></p>
+        <p>Age: <input type="text" name="age"/></p>
+        <p><input type="submit"/></p>
     </form>
 </body>
 </html>
