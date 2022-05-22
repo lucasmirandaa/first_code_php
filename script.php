@@ -5,15 +5,11 @@ $category[]='kid';
 $category[]='teenager';
 $category[]='adult';
 $category[]='old';
-//print_r($category);
 
-$name='Eobard Thawne';
-$age=19;
+$name = $_POST['name'];//'Eobard Thawne';
+$age = $_POST['age'];
 
-//var_dump($name);
-//var_dump($age);
-
-if($age=6 && $age<=12)
+if($age>=6 && $age<=12)
 {
     for($i = 0;$i <=count($category);$i++)
     {
@@ -34,7 +30,7 @@ elseif($age>=19 && $age<=59)
     for($i=0;$i<=count($category);$i++)
     {
         if($category[$i]=='adult')
-        echo "The swimmer ".$nome." competes in the category ".$category[$i];
+        echo "The swimmer ".$name." competes in the category ".$category[$i];
     }
 }
 else
@@ -42,6 +38,6 @@ else
     for($i=0;$i<=count($category);$i++)
     {
         if($category[$i]=='old')
-        echo "The swimmer ".$nome." competes in the category ".$category[$i];
+        echo "The swimmer ".$name." competes in the category ".$category[$i];
     }
 }
